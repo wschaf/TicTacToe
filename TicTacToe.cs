@@ -125,6 +125,12 @@ namespace TicTacToe
                         error = true;
                     }
 
+                    if ((row < 0) || (row > 3))
+                    {
+                        Console.WriteLine("Input an integer between 0 and 3 inclusive.");
+                        error = true;
+                    }
+
                 } while (error);
 
                 do      //  Y Coordinate
@@ -138,6 +144,12 @@ namespace TicTacToe
                     catch (Exception)
                     {
                         Console.WriteLine("Invalid input.");
+                        error = true;
+                    }
+
+                    if ((column < 0) || (column > 3))
+                    {
+                        Console.WriteLine("Input an integer between 0 and 3 inclusive.");
                         error = true;
                     }
 
